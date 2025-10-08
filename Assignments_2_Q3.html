@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+</head>
+
+<body>
+    <div>
+        <p>
+            <center><img src="sunbeamlogo.png"></center>
+        </p>
+    </div>
+    <p>
+        <center> <b>
+                <h1>Sunbeam Registration Form</h1>
+            </b></center>
+    </p>
+    <form>
+        <table align="center" cellspacing="10px">
+            <tr>
+                <td rowspan="10">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Az5Bt3zUtiM?si=FH-SctiXDRSytZyU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
+                <td><b><label for="name">Name :</label></b></td>
+                <td><input id="name" type="text" name="Name"></td>
+            </tr>
+            <tr>
+                <td><b><label for="bdate">BirthDate :</label></b></td>
+                <td><input id="bdate" type="date" name="BirthDate"></td>
+            </tr>
+            <tr>
+                <td><b><label for="email">Email :</label></b></td>
+                <td><input id="email" type="email" name="Email"></td>
+            </tr>
+            <tr>
+                <td><b><label for="pass">Password :</label></b></td>
+                <td><input id="pass" type="password" name="Password"></td>
+            </tr>
+            <tr>
+                <td><b><label for="add">Address :</label></b></td>
+                <!-- <td><input id="add" type="textarea"></td> -->
+                <td><textarea id="add" name=Address>203, Anuda Chambers, Shaniwar Peth, near Gujar Hospital, Karad, Maharashtra 415110</textarea></td>
+            </tr>
+            <tr>
+                <td><b><label for="gender">Gender :</label></b></td>
+                <td><input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                </td>
+            </tr>
+            <tr>
+                <td><b><label for="">Upload Phopto :</label></b></td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td><b><label for="course">Select your Course :</label></b></td>
+                <td><select name="course" id="course">
+                        <option value="Dac">PGDAC</option>
+                        <option value="Dms">PGDMC</option>
+                        <option value="Dbda">PGDBDA</option>
+                        <option value="Ditiss">PGDITISS</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><b><label for="skill">Skill Set :</label></b></td>
+                <td><input type="checkbox" id="skill" value="java">Java
+                    <input type="checkbox" id="skill" value="CPP">CPP
+                    <input type="checkbox" id="skill" value="os">OS
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
