@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="load()">Date & Greeting Web Page</h1>
+    <h2 id="h21"></h2>
+    <h2 id="h22"></h2>
+    <h2 id="h23"></h2>
+
+    <script>
+        const currentDate = new Date();
+        function load(){
+            const h21=document.getElementById('h21')
+            const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            let day=days[currentDate.getDay()]
+            const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            let month=months[currentDate.getMonth()]
+            h21.innerHTML=`Today is ${day},${currentDate.getDate()} ${month} ${currentDate.getFullYear()}`
+            
+
+            const h22=document.getElementById('h22')
+            let hours=currentDate.getHours()
+            let msg=''
+            if (hours < 12) {
+                msg='Good Morning'
+            } else if (hours < 18) {
+                msg='Good afternoon'
+            } else {
+                msg='Good evening'
+            }
+            h22.innerHTML=`Welcome, and ${msg} to you `
+
+            const h23=document.getElementById('h23')
+            const endOfYear = new Date(currentDate.getFullYear(), 11, 31)
+            const timeDifference = endOfYear.getTime() - currentDate.getTime();
+            const daysLeft = Math.round(timeDifference/ (1000 * 60 * 60 * 24));
+            h23.innerHTML=`Number of Days left till end of the year: ${daysLeft}`
+
+            
+
+
+        }
+
+    </script>
+</body>
+</html>

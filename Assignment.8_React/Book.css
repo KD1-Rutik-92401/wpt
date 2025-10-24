@@ -1,0 +1,24 @@
+
+.parent{
+    justify-items: center;   
+    background-color: beige;
+}
+
+
+.container{
+    display: flex;
+    /* display: inline-block; */
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid black;
+    width: 50vh;
+    background-color: rgb(153, 190, 243);
+    font-size: medium;
+    font-weight: 700;
+
+
+}
+.image{
+    margin-left: 20px;
+
+}

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #3f3f3f;
+    width: 40%;
+    margin: 150px auto;
+    background-color: #dbd8e3;
+    border-radius: 20px;
+}
+
+.container h1 {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    padding: 10px;
+    margin: 15px;
+}
+
+.container input {
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-family: cursive;
+}
+
+.btn #add, #sort {
+    width: 150px;
+    align-items: center;
+    padding: 7px;
+    font-family: cursive;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+

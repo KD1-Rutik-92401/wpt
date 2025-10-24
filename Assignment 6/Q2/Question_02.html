@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 02</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="Question_02.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <h1>Calculator</h1>
+    </div>
+    <div class="container">
+        <table class="table">
+            <tbody>
+                <tr id="field1">
+                    <td colspan="2"><label for="num1">Enter Number 1 </label></td>
+                    <td colspan="2"><input type="number" id="num1" placeholder="Enter Number"></td>
+                </tr>
+                <tr id="field2">
+                    <td colspan="2"><label for="num2">Enter Number 2 </label></td>
+                    <td colspan="2"><input type="number" id="num2" placeholder="Enter Number"></td>
+                </tr>
+                <tr id="field3">
+                    <td colspan="2"><label for="result">Result</label></td>
+                    <td colspan="2"><div id="result"></div></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="1"><button type="button" id="add" onclick="addition()">Addition</button></td>
+                    <td colspan="1"><button type="button" id="sub" onclick="subtraction()">Subtraction</button></td>
+                    <td colspan="1"><button type="button" id="mul" onclick="multiplication()">Multiplication</button></td>
+                    <td colspan="1"><button type="button" id="div" onclick="division()">Division</button></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script>
+        function addition() {
+            const num1 = Number(document.getElementById('num1').value)
+            const num2 = Number(document.getElementById('num2').value)
+            const resultDiv = document.getElementById('result')
+            resultDiv.innerText = num1 + num2
+        }
+
+        function subtraction() {
+            const num1 = Number(document.getElementById('num1').value)
+            const num2 = Number(document.getElementById('num2').value)
+            const resultDiv = document.getElementById('result')
+            resultDiv.innerText = num1 - num2
+        }
+
+        function multiplication() {
+            const num1 = Number(document.getElementById('num1').value)
+            const num2 = Number(document.getElementById('num2').value)
+            const resultDiv = document.getElementById('result')
+            resultDiv.innerText = num1 * num2
+        }
+
+        function division() {
+            const num1 = Number(document.getElementById('num1').value)
+            const num2 = Number(document.getElementById('num2').value)
+            const resultDiv = document.getElementById('result')
+            if (num2 === 0) {
+                resultDiv.innerText = 'Cannot Divide By Zero'
+            } else {
+                resultDiv.innerText = num1 / num2
+            }
+        }
+    </script>
+</body>
+</html>

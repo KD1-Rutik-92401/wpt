@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunbeam Registration Form</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <img src="./sunbeam logo.png" alt="Sunbeam Logo" width="150">
+        <h2>Sunbeam Registration Form</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <!-- YouTube video retained -->
+                        <iframe width="300" height="180"
+                            src="https://www.youtube.com/embed/Az5Bt3zUtiM?si=RM6bUkyOFxdwly2L"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </td>
+
+                    <td>
+                        <form id="regForm">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><label for="name">Name: </label></td>
+                                        <td><input type="text" id="name"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="birthdate">BirthDate: </label></td>
+                                        <td><input type="date" id="birthdate"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="email">Email: </label></td>
+                                        <td><input type="email" id="email"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="password">Password: </label></td>
+                                        <td><input type="password" id="password"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="address">Address: </label></td>
+                                        <td><textarea id="address" rows="4"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="gender">Gender: </label></td>
+                                        <td>
+                                            <input type="radio" name="gender" value="male">Male
+                                            <input type="radio" name="gender" value="female">Female
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="uploadphoto">Upload Photo: </label></td>
+                                        <td><input type="file" id="uploadphoto"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="course">Select your Course: </label></td>
+                                        <td>
+                                            <select id="course">
+                                                <option value="">--Select--</option>
+                                                <option>PG-DAC</option>
+                                                <option>PG-DMC</option>
+                                                <option>PG-DBDA</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="skill">Skill Set:</label></td>
+                                        <td>
+                                            <input type="checkbox" class="skill" value="JAVA">JAVA
+                                            <input type="checkbox" class="skill" value="CPP">CPP
+                                            <input type="checkbox" class="skill" value="OS">OS
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <input type="submit" value="Register">
+                                            <input type="reset" value="Clear">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                        <p id="message" class="error"></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+
+    <script src="Question1.js"></script>
+</body>
+
+</html>
